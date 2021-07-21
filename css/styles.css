@@ -6,6 +6,9 @@ h2{
     color: #e46c2c;
 }
 
+h5{
+    color: white
+}
 .jumbotron {
     margin: 0;
     padding: 30px;
@@ -14,7 +17,42 @@ h2{
 }
 
 
+/*______________________________________________________________________________________________________________________________________*/
+/* Footer css */
+ul.a {
+    list-style-type: square;
+    color: #e46c2c;
+  }
 
+.site-footer li a {
+    color: #e46c2c;
+}
+.icon-orange{
+    color: #e46c2c;
+}
+
+.site-footer {
+    background-image: linear-gradient(to right, #1d1d20, #1d1d19, #1d1d19);
+    padding: 20px 0;
+}
+
+.fa.fa-instagram {
+    margin-top: 25px;
+    font-size: 35px;
+}
+.fa.fa-facebook {
+    margin-top: 25px;
+    font-size: 35px;
+}
+.fa.fa-twitter {
+    margin-top: 25px;
+    font-size: 35px;
+}
+.fa.fa-youtube {
+    margin-top: 25px;
+    font-size: 35px;
+}
+/*______________________________________________________________________________________________________________________________________*/
 
 /* The Overlay */ 
 
@@ -73,3 +111,28 @@ h2{
       right: 35px;
     }
   }
+  /*______________________________________________________________________________________________________________________________________*/
+  
+  /* Footer Stack Tools */
+
+  /* Create 3 equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the 3 columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .column {
+      width: 100%;
+    }
+  }
+  /*______________________________________________________________________________________________________________________________________*/
