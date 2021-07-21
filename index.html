@@ -9,25 +9,84 @@
     <!-- Bootstrap CSS -->
     <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS
+    <!-- Additional CSS must be placed after Bootstrap CSS-->
     <link rel = "stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel = "stylesheet" href = "node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel = "stylesheet" href = "css/styles.css" />
--->
+  
     <title>Care Hiring Company</title>
 </head>
+
+<!--NAVBAR OVERLAY SCRIPT -->
+<script>
+
+  /* Open when someone clicks on the  element */
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+</script>
 
 
 <body>
 
+
+
   <header class = "jumbotron jumbotron-fluid">
-    <h2> Welcome to the Rodeo </h2>
+    <div class = "container">
+      <div class = "row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+              <img src="img/logo white on black.PNG" class="img-fluid" />
+           </div>
+           <div class = "col mt-3">
+              <h1>GEMMA'S EVENTS</h1>
+              <h2 class = "d-none d-sm-block">for all your equipment hiring and catering needs</h2>
+          </div>
+
+          
+        
+      </div> 
+  </div>
+        
+
+
+    
+
 
 
   </header>
 
-  <nav class = "navbar navbar-expand-sm navbar-dark sticky-top">
+  <nav class = "navbar navbar-dark sticky-top">
+    <!-- The overlay -->
+    <div id = "myNav" class = "overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class = "overlay-content">
+        <a href = "#">About</a>
+        <a href = "#">Services</a>
+        <a href = "#">Clients</a>
+        <a href = "#">Contact</a>
+      </div>
+
+    </div>
+    
+    <div class = "container">
+      <div class = "row" >
+        <div class = "col ml-4">
+        <button class="navbar-toggler" type="button" >
+          <span class="navbar-toggler-icon" onclick = "openNav()"></span>
+        </button> 
+      </div>
+      </div>
+    </div>
 
 
   </nav>
