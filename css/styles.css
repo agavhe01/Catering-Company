@@ -53,6 +53,7 @@ img.display-centred { /* centre align image */
   ul.a {
       list-style-type: square;
       color: #e46c2c;
+      margin-left:-1rem
     }
 
   .site-footer li a {
