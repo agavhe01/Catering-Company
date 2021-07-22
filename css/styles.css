@@ -2,7 +2,7 @@
 
   img{border:0;}
 
-  .navbar {
+.navbar {
       background-color: #1d1d19;
   }
 
@@ -31,6 +31,22 @@
   border-color: white
 }
 
+img.display-centred { /* centre align image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+
+  h2.centreAlign { /* centre align text in navbar */
+    text-align: center;
+  }
+
+  h1.centreAlign { /* centre align text in navbar */
+    text-align: center;
+    color: white;
+  }
+
+  
 /*______________________________________________________________________________________________________________________________________*/
 
 /* FOOTER CSS*/
@@ -87,7 +103,7 @@
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
+  }
   
   /* Position the content inside the overlay */
   .overlay-content {
@@ -122,17 +138,17 @@
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-    @media screen and (max-height: 450px) {
-      .overlay a {font-size: 20px}
+  @media screen and (max-height: 450px) {
+      overlay a {font-size: 20px}
       .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
       }
   }
-  /*______________________________________________________________________________________________________________________________________*/
+/*______________________________________________________________________________________________________________________________________*/
   
-  /* FOOTER (STACKS WHEN <= 700PX)*/
+/* FOOTER (STACKS WHEN <= 700PX)*/
 
   /* Create 3 equal columns that floats next to each other */
   .column {
@@ -154,14 +170,13 @@
       width: 100%;
     }
   }
-  /*______________________________________________________________________________________________________________________________________*/
+/*______________________________________________________________________________________________________________________________________*/
 
-  /* SLIDESHOW CSS */
+/* SLIDESHOW CSS */
 
   /* {box-sizing:border-box} */
-
   *{box-sizing: border-box}
-   body {font-family: Verdana, sans-serif; margin:0}
+  body {font-family: Verdana, sans-serif; margin:0}
   .mySlides {display: none;}
   img {vertical-align: middle;}
 
@@ -173,8 +188,8 @@
   }
 
   /* Hide the images by default */
-   .mySlides {
-      display: none;
+  .mySlides {
+    display: none;
   }
   
 
