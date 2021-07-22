@@ -1,5 +1,7 @@
 /* HEADER CSS */
 
+  img{border:0;}
+
   .navbar {
       background-color: #1d1d19;
   }
@@ -17,6 +19,17 @@
       background-image: linear-gradient(to right, #1d1d20, #1d1d19, #1d1d19);
       color: white;
   }
+
+  .btn-primary {
+    background-color: #e46c2c;
+    border: 0rem;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #1d1d19;
+  border-color: white
+}
 
 /*______________________________________________________________________________________________________________________________________*/
 
@@ -173,7 +186,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: #e46c2c;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -225,7 +238,7 @@
   }
 
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #e46c2c;
   }
 
   /* Fading animation */
