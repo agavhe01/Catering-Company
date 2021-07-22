@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset = "utf-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS-->
+        <link rel = "stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel = "stylesheet" href = "css/styles.css" />
+    
+        <title>Gemma Events, an equipment hiring company designed by Anesu Gavhera</title>
+        
+    </head>
+
+    <!-- NAVBAR OVERLAY SCRIPT -->
+    <script>
+
+    /* Open when someone clicks on the  element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <body>
+
+        <!-- Header jumbtron with logo -->
+        <header class = "jumbotron jumbotron-fluid">
+        <div class = "container">
+        <div class = "row">
+            <div class="col align-self-center">
+                <img src="img/logo white on black.PNG" class="display-centred img-fluid" />
+            </div>
+        </div> <!-- End row line 80-->
+            <div class = "row">
+                <div class = "col mt-3">
+                    <h1 class = "centreAlign">GEMMA'S EVENTS</h1>
+                    <h2 class = "centreAlign d-none d-sm-block">for all your equipment hiring and catering needs</h2>
+                    </div>
+                </div>
+
+            
+            
+        
+    </div>
+            
+
+
+        
+
+
+
+        </header>
+    
+        <!-- Navbar with overlay -->
+        <nav class = "navbar navbar-dark sticky-top">
+        <!-- The overlay -->
+        <div id = "myNav" class = "overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class = "overlay-content">
+            <a href = "index.html">About</a>
+            <a href = "#">Services</a>
+            <a href = "#">Clients</a>
+            <a href = "#">Contact</a>
+        </div>
+
+        </div>
+        
+        <div class = "container">
+        <div class = "row" >
+            <div class = "col ml-4">
+            <button class="navbar-toggler" type="button" >
+            <span class="navbar-toggler-icon" onclick = "openNav()"></span>
+            </button> 
+        </div>
+        </div>
+        </div>
+
+
+        </nav>
+
+        <!--- EVERYTHING ELSE GOES HERE ------------------------------------------->
+
+        <div class = "container">
+            
+            <h1> THIS IS THE BODY</h2>
+            <h2> lowkey just tryna catch a body in these streets</h2>
+
+        </div> <!-- end container-->
+
+        <!-- EVERYTHING ELSE ENDS HERE---------------------------------------------->
+
+        <footer class = "site-footer">
+            <div class = "container">
+                <div class = "row">
+        
+                    <div class = "column">
+                        <h5>Additional Links</h5>
+                        <ul class = "a">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Sites</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "column">
+                        <h5>Social Media</h5>
+                            <a href="http://instagram.com/"><i class="fa fa-instagram icon-orange"></i></a>
+                            <a href="http://facebook.com/"><i class="fa fa-facebook icon-orange"></i></a>
+                            <a href="http://twitter.com/"><i class="fa fa-twitter icon-orange"></i></a>
+                            <a href="http://youtube.com/"><i class="fa fa-youtube icon-orange"></i></a>    
+                    </div>
+
+                    <div class = "column ">
+                        <h5>Contact Details</h5>
+                        <a role="button" class="btn btn-link icon-orange" href="tel:+15559999999"><i class="fa fa-phone icon-orange"></i> +1 555 999 9999</a><br/>
+                        <a role="button" class="btn btn-link icon-orange" href="mailto:info@gemmas.com"><i class="fa fa-envelope-o icon-orange"></i> info@gemmas.com</a><br/>
+                        <a role="button" class="btn btn-link icon-orange" href=" http://maps.google.com/?q=389 Boston Avenue, Medford, MA 02155"><i class="fa fa-home icon-orange"></i>389 Boston Avenue, Medford, MA</a>             
+                    </div>
+        
+                </div> <!-- end row-->
+
+            </div> <!-- end container-->
+        </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src = "node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src = "node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
