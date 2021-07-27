@@ -1,0 +1,298 @@
+<!--        ANESU GAVHERA              -->
+<!--      CATERING COMPANY             -->
+<!--         7/14/2021                 -->
+<!--    template for new pages         -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset = "utf-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS-->
+        <link rel = "stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel = "stylesheet" href = "css/styles.css" />
+    
+        <title>Gemma Events, an equipment hiring company designed by Anesu Gavhera</title>
+        
+    </head>
+
+    <!-- NAVBAR OVERLAY SCRIPT -->
+    <script>
+
+        /* Open when someone clicks on the  element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <!-- TABULAR GALLERY SCRIPT-->
+    <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+    <!-- BODY WITH FOOTER AT BOTTOM -->
+    <body>
+
+        <!-- Header jumbtron with logo -->
+        <header class = "jumbotron jumbotron-fluid">
+            <div class = "container">
+                <div class = "row">
+                    <div class="col align-self-center">
+                        <img src="img/logo white on black.PNG" class="display-centred img-fluid" />
+                    </div>
+                </div> <!-- End row -->
+                <div class = "row">
+                    <div class = "col mt-3">
+                        <h1 class = "centreAlign">GEMMA'S EVENTS</h1>
+                        <h2 class = "centreAlign d-none d-sm-block">for all your equipment hiring and catering needs</h2>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </header>
+    
+        <!-- Navbar with overlay -->
+        <nav class = "navbar navbar-dark sticky-top">
+
+            <div id = "myNav" class = "overlay">
+                <!-- Button to close the overlay navigation -->
+                <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+                <!-- Overlay content -->
+                <div class = "overlay-content">
+                    <a href = "index.html">About</a>
+                    <a href = "#">Services</a>
+                    <a href = "#">Clients</a>
+                    <a href = "#">Contact</a>
+                </div>
+            </div> <!-- end div id -->
+            
+            <div class = "container">
+                <div class = "row" >
+                    <div class = "col ml-4">
+                        <button class="navbar-toggler" type="button" >
+                            <span class="navbar-toggler-icon" onclick = "openNav()"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div> <!-- end container-->
+
+        </nav>
+
+        <!--- EVERYTHING ELSE GOES HERE --------------------------------------------------------------->
+
+        <div class = " container ">
+            
+        
+
+            <div class="parallax">
+
+                <!-- Label: Corporate Events-->
+                <div style="height:200px;background-color:#d66b30;font-size:36px">
+                    <!-- Label 1-->
+                    <div class = "row">
+                        <div class="col align-self-center">
+                            <img src="img/label_corporateEvents.PNG" height = "200px" width = "200px" class="display-centred img-fluid" />
+                        </div>
+                    </div> <!-- End row -->
+                </div> <!-- end style-->
+
+            
+                
+                <!------------ The Image Gallery  ------------>
+                </br> </br> 
+
+                <style>
+                    *{
+                      box-sizing: border-box;
+                    }
+                    
+                    
+                    
+                    /* The grid: Four equal columns that floats next to each other */
+                    .columnImage {
+                      float: left;
+                      width: 22%;
+                      padding: 0px;
+                    }
+                    
+                    /* Style the images inside the grid */
+                    .column img {
+                      opacity: 0.8; 
+                      cursor: pointer; 
+                    }
+                    
+                    .column img:hover {
+                      opacity: 1;
+                    }
+                    
+                    /* Clear floats after the columns */
+                    .row:after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }
+                    
+                    /* The expanding image container */
+                    .containerImage {
+                      position: relative;
+                      display: none;
+                    }
+                    
+                    
+                    /* Expanding image text */
+                    #imgtext {
+                      position: absolute;
+                      bottom: 15px;
+                      left: 15px;
+                      color: white;
+                      font-size: 20px;
+                    }
+                    
+                    /* Closable button inside the expanded image */
+                    .closebtn {
+                      position: absolute;
+                      top: 10px;
+                      right: 15px;
+                      color: white;
+                      font-size: 35px;
+                      cursor: pointer;
+                    }
+                </style>
+            
+                <div class="row">
+                    <div class="columnImage ml-3">
+                    <img src="img/beach.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="columnImage ml-2">
+                    <img src="img/malibu.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="columnImage ml-2">
+                    <img src="img/road.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="columnImage ml-1 ">
+                    <img src="css/elephant.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                </div>
+                
+                <div class="containerImage">
+                    </br>
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+
+                </br> </br>
+                <!------------- end Image Gallery ------------->
+
+                <!------------- 2nd image gallery -------------->
+                <div class="row">
+                    <div class="columnImage ml-3">
+                    <img src="img/beach.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="columnImage ml-2">
+                    <img src="img/malibu.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="columnImage ml-2">
+                    <img src="img/road.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="columnImage ml-1">
+                    <img src="css/elephant.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                    </div>
+                </div>
+                
+                <div class="containerImage">
+                    </br>
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+
+                <!------------- end 2nd Image Gallery ---------->
+
+
+                
+            </div> <!-- end parrallax-->
+
+            <div style="height:200px;background-color:#d66b30;font-size:36px">
+                <!-- Label 1-->
+                <div class = "row">
+                    <div class="col align-self-center">
+                        <img src="img/label_corporateEvents.PNG" height = "200px" width = "200px" class="display-centred img-fluid" />
+                    </div>
+                </div> <!-- End row -->
+            </div> <!-- end style-->
+
+            <div class="parallax">
+                Scroll Up and Down this page to see the parallax scrolling effect.
+                This div is just here to enable scrolling.
+                Tip: Try to remove the background-attachment property to remove the scrolling effect.
+
+
+            </div>
+
+        </div> <!-- end container-->
+
+        <!-- EVERYTHING ELSE ENDS HERE------------------------------------------------------------------>
+
+        <!-- FOOTER-->
+        <footer class = "site-footer">
+            <div class = "container">
+                <div class = "row">
+        
+                    <div class = "column">
+                        <h5>Additional Links</h5>
+                        <ul class = "a">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Sites</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "column">
+                        <h5>Social Media</h5>
+                            <a href="http://instagram.com/"><i class="fa fa-instagram icon-orange ml-2"></i></a>
+                            <a href="http://facebook.com/"><i class="fa fa-facebook icon-orange"></i></a>
+                            <a href="http://twitter.com/"><i class="fa fa-twitter icon-orange"></i></a>
+                            <a href="http://youtube.com/"><i class="fa fa-youtube icon-orange"></i></a>   
+                            <p class = "d-block d-md-none">.</br></p> <!-- FIX THIS PLEASE--> 
+                    </div>
+
+                    <div class = "column ">
+                        <h5>Contact Details</h5>
+                        <a role="button" class="btn btn-link icon-orange  text-nowrap" href="tel:+15559999999"><i class="fa fa-phone icon-orange"></i> +1 555 999 9999</a><br/>
+                        <a role="button" class="btn btn-link icon-orange  text-nowrap" href="mailto:info@gemmas.com"><i class="fa fa-envelope-o icon-orange"></i> info@gemmas.com</a><br/>
+                        <a role="button" class="btn btn-link icon-orange " href=" http://maps.google.com/?q=389 Boston Avenue, Medford, MA 02155"><i class="fa fa-home icon-orange"></i>389 Boston Avenue, Medford, MA</a>             
+                    </div>
+        
+                </div> <!-- end row-->
+
+            </div> <!-- end container-->
+        </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src = "node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src = "node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
