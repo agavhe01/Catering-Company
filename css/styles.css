@@ -6,6 +6,14 @@
       background-color: #1d1d19;
   }
 
+small{
+  color:#e46c4f;
+}
+
+label{
+  color:#e46c2c;
+}
+
   h2{
       color: #e46c2c;
   }
@@ -283,13 +291,11 @@ img.display-centred { /* centre align image */
 
   /* Scrolling Parralex */
 
-  body, html {
+  body{
     height: 100%;
   }
   
-  .parallax {
-    /* The image used */
-    background-image: url('images/stooldecor.PNG');
+  .parallax1, .parallax2, .parallax3 {
   
     /* Full height */
     height: 100%; 
@@ -299,6 +305,21 @@ img.display-centred { /* centre align image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .parallax1 {
+    /* The image used */
+    background-image: url('images/stooldecor.PNG');
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url('images/dancefloor.PNG');
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url('images/tabledecor.PNG');
   }
 /*______________________________________________________________________________________________________________________________________*/
   /* Image Grid Gallery CSS */
@@ -333,4 +354,29 @@ img.display-centred { /* centre align image */
        max-width: 100%;
     }
   }
+/*______________________________________________________________________________________________________________________________________*/
+  /* Biography Cards */
+  .card {
+    background-color: #1d1d19;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 725px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: #e46c2c;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
 /*______________________________________________________________________________________________________________________________________*/
