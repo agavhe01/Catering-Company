@@ -360,6 +360,7 @@ img.display-centred { /* centre align image */
     background-color: #1d1d19;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 725px;
+    max-height: 400px;
     margin: auto;
     text-align: center;
   }
