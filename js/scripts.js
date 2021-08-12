@@ -1,4 +1,4 @@
-$(function() {
+$(functcon() {
     $("#contactusButton").click(function(){
         $('#contactusModal').modal('show');
     });
