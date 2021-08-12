@@ -49,6 +49,12 @@ img.display-centred { /* centre align image */
     margin-right: auto 
   }
 
+  img.thumbnailFormat{
+    height: 150px;
+    width: 100px;
+    
+  }
+
   h2.centreAlign { /* centre align text in navbar */
     text-align: center;
   }
