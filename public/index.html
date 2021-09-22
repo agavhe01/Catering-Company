@@ -1,0 +1,383 @@
+<!--        ANESU GAVHERA              -->
+<!--      CATERING COMPANY             -->
+<!--         8/02/2021                 -->
+<!--        index.html                 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset = "utf-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS-->
+    <link rel = "stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel = "stylesheet" href = "node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel = "stylesheet" href = "css/styles.css" />
+  
+    <title>Gemma Events, an equipment hiring company</title>
+    
+</head>
+
+<!-- NAVBAR OVERLAY SCRIPT -->
+<script>
+
+  /* Open when someone clicks on the  element */
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+<!-- SLIDESHOW OVERLAY SCRIPT -->
+<script>
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  /* Next/previous controls */
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+
+  /* Thumbnail image controls */
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  /*  Main function showslides */
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+<!-- begin the slideshow when page is loaded -->
+<body onload = "showSlides(1);"> </body>
+
+
+<body>
+
+
+
+<!-- Header jumbtron with logo -->
+  <header class = "jumbotron jumbotron-fluid">
+    <div class = "container">
+      <div class = "row">
+          <div class="col align-self-center">
+              <img src="img/logo white on black.PNG" class="display-centred img-fluid" />
+           </div>
+      </div> <!-- End row line 80-->
+           <div class = "row">
+              <div class = "col mt-3">
+                  <h1 class = "centreAlign">GEMMA'S EVENTS</h1>
+                  <h2 class = "centreAlign d-none d-sm-block">for all your equipment hiring and catering needs</h2>
+                </div>
+              </div>
+
+          
+        
+      
+  </div>
+        
+
+
+    
+
+
+
+  </header>
+  
+  <!-- Navbar with overlay -->
+  <nav class = "navbar navbar-dark sticky-top">
+    <!-- The overlay -->
+    <div id = "myNav" class = "overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class = "overlay-content">
+        <a href = "closenav()">Home</a>
+        <a href = "aboutus.html">About</a>
+        <a href = "gallery.html">Gallery</a>
+        <a href = "inventory.html">Inventory</a>
+      </div>
+
+    </div>
+    
+    <div class = "container">
+      <div class = "row" >
+        <div class = "col ml-4">
+        <button class="navbar-toggler" type="button" >
+          <span class="navbar-toggler-icon" onclick = "openNav()"></span>
+        </button> 
+      </div>
+      </div>
+    </div>
+
+
+  </nav>
+
+
+
+  
+<div class = "container mt-4">
+
+  <!-- Slideshow container -->
+  <div class = "row">
+    <div class = "col  ">
+      <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 8</div>
+            <img src="img/decorClearSpan.jpg" style="width:100%">
+            <div class="text">Wedding in Clearspan Structure</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="img/decorClearSpan2.jpg" style="width:100%">
+            <div class="text">Themed Party in Clearspan Structure</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="img/decorClearSpan3.jpg" style="width:100%">
+            <div class="text">High School Prom</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="img/decorClearSpan4.jpg" style="width:100%">
+            <div class="text">Private Lounge</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="img/30mClearspan2.jpg" style="width:100%">
+            <div class="text">Music Concert</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="img/barDecor.jfif" style="width:100%">
+            <div class="text">Bar</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="img/sportsDecor.jfif" style="width:100%">
+            <div class="text">Sports Event</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="img/aerialDecor.jpg" style="width:100%">
+            <div class="text">Aerial View of Corporate Event</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- Our Services image display -->
+  <div class = "row">
+    <div class="media">
+      <img class="d-flex mr-3 img-thumbnail" src="img/services.PNG" alt="Breadcrumb Trail" style="border: 0;" />
+      <div class="media-body align-self-center">
+          <p class="d-none d-sm-block"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Motto image display -->
+  <div class = "row">
+    <div class="media">
+      <img class="d-flex mr-3 img-thumbnail" src="img/motto.png" alt="Breadcrumb Trail" style="border: 0;" />
+    </div>
+  </div>
+<!-- Everything else goes here -->
+
+  <!-- We create memories CARD and BUTTON-->
+  <div class = "row">
+      <!-- <div class = "card" style = "border: 0;"> -->
+        <div class = "col-8 my-3">
+          <h2>We create memories for clients just like you</h2>
+        </div>
+        <p class = "d-block d-sm-none">.</br></p> <!-- FIX THIS PLEASE-->
+        <div class = "col-4 my-2">
+          <a href = "gallery.html" class = "btn btn-primary btn-lg">VIEW OUR PORTFOLIO OF WORK </a>
+        </div>
+
+      <!-- </div> -->
+      
+  </div>
+
+
+
+</div> <!-- END CONTAINER HERE -->
+
+
+
+
+
+  <footer class = "site-footer">
+    <div class = "container">
+      <div class = "row">
+
+        <div class = "column">
+          <h5>Additional Links</h5>
+          <ul class = "a">
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="#" id = "contactusButton">Contact Us</a></li>
+        </ul>
+
+        </div>
+
+        <div class = "column">
+          <h5>Social Media</h5>
+            <a href="http://instagram.com/"><i class="fa fa-instagram icon-orange"></i></a>
+            <a href="http://facebook.com/"><i class="fa fa-facebook icon-orange"></i></a>
+            <a href="http://twitter.com/"><i class="fa fa-twitter icon-orange"></i></a>
+            <a href="http://youtube.com/"><i class="fa fa-youtube icon-orange"></i></a>
+            <p class = "d-block d-md-none"></br></p> <!-- FIX THIS PLEASE--> 
+          
+        </div>
+
+        <div class = "column ">
+          <h5>Contact Details</h5>
+          <a role="button" class="btn btn-link icon-orange  text-nowrap" href="tel:+263775884917"><i class="fa fa-phone icon-orange"></i> +263 775 884 917</a><br/>
+          <a role="button" class="btn btn-link icon-orange  text-nowrap" href="mailto:info@gemmas.com"><i class="fa fa-envelope-o icon-orange"></i> info@gemmas.com</a><br/>
+          <a role="button" class="btn btn-link icon-orange  " href=" http://maps.google.com/?q=2 Cavendish Drive, Avonlea, Harare"><i class="fa fa-home icon-orange"></i>2 Cavendish Drive, Avonlea, Harare</a>             
+      </div>
+      
+      </div>
+
+    </div>
+
+
+
+
+  </footer>
+
+  <!-- Contact us modal-->
+  <div id="contactusModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 style="color:#e46c2c;">Contact Us</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                            </div>
+                            <div class="col-7">
+                                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col offset-md-2">
+                                <h1 style="color:#e46c2c; font-size: 15px;">May we contact you?</h1>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                    <label for="contactYes" class="form-check-label">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                    <label for="contactNo" class="form-check-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+      <script src = "node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src = "node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src = "js/scripts.js"></script>
+</body>
+
+</html>
